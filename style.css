@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    /* border: 3px solid rgb(0, 0, 0); */
+    width: 1440px;
+
+}
+
+.header_item{
+    /* border: 3px solid red; */
+    background-color: #B36050;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 61px;
+}
+
+
+.header_io1 ul li{
+    padding-right: 33px;
+    display: inline-block;
+}
+
+.header_io3 ul li{
+    display: inline-block;
+    padding-right: 50px;
+    position: relative;
+    left: 50px;
+}
+
+.header_io2 img{
+    position: relative;
+    left: -100px;
+}
+
+
+
+.content_one img{
+    width:1440px;
+}
+
+.content_two{
+    position: relative;
+    top: -5px;
+    /* border: 3px solid coral; */
+    background-color: #A9AE8D;
+    height: 304px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.content_two button {
+    background-color: #B45F4D;
+    border: none;
+    padding: 18px 38px;
+    cursor: pointer;
+}
+
+nav{
+    background-color: #F6F4EC ;
+    /* border: 3px solid brown; */
+    height: 835px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navmain{
+    /* border: 4px solid goldenrod; */
+    height: 755.16px;
+    width: 1440px;
+    
+}
+.navmain h3{
+    text-align: center;
+    line-height: 59px;
+
+}
+.box_nav{
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box_navigation{
+    /* border: 3px solid black; */
+    width: 340px;
+    height: 650px;
+    line-height: 50px;
+}
+.iko{
+    position: relative;
+    left:270px;
+} 
+
+.ioh h3{
+    text-align: left;
+}
+.ifg{
+    position: relative;
+    top: -20px;
+
+}
+.heading3{
+    text-align: left !important;
+    line-height: 20px !important;
+    position: relative;
+    top: -40px;
+}
+
+.box_navigation img{
+    border-radius: 5px;
+}
+
+
+
+
+.config{
+    margin:0 auto;
+    /* border: 4px solid red; */
+    width: 1220px;
+    height: 407.55px;
+    margin-top: 30px;
+}
+
+.alspace{
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    align-items: center;
+    padding: 20px;
+    background-color: #DF9B7A;
+    position: relative;
+    top: -150px;
+
+}
+
+.alspace h2{
+    text-transform: uppercase;
+}
+
+section{
+    margin-top: 50px;
+    background-color: #F1D3B9;
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 914px;
+}
+
+.mydear{
+    /* border: 3px solid green; */
+    background-color: #fff;
+    height: 750px;
+    width: 500px;
+    
+}
+
+.mydear h1{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57.6px;
+}
+
+.mydear p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #B45F4D;
+    padding: 30px;
+}
+
+.kersonone{
+    /* border: 3px solid rgb(111, 218, 23); */
+    height: 310px;
+}
+.soz{
+    line-height: 120px;
+    text-align: center;
+}
+
+footer{
+    height: 300px;
+    background-color: #F6F4EC;
+    /* border: 3px solid hotpink; */
+    display: flex;
+    justify-content: space-around;
+}
+.boxQwer1{
+    width: 754px;
+    /* border: 3px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.boxQwer1 ol{
+    position: relative;
+    left: -100px;
+}
+.boxQwer1 ul{
+    position: relative;
+    left: -38px;
+}
+.boxQwer1 li{
+    font-size: 22px;
+    list-style-type: none;
+    line-height: 35px;
+    color: #B45F4D;
+}
+
+
+.boxQwer2{
+   line-height: 30px;
+    width: 686px;
+    /* border: 3px solid green; */
+    color: #B45F4D;
+}
+.boxQwer2 h4{
+    margin-top:90px ;
+    
+}
+.boxQwer2 button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    border:3px solid #B36050;
+    width: 565px;
+    height: 44px;
+    text-align: right;
+    background: local;
+    cursor: pointer;
+}
+.boxQwer2 p{
+    font-size: 19px;
+}
+.footer{
+    background-color: #F6F4EC;
+    border-top: 4px solid #F1D3B9;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
