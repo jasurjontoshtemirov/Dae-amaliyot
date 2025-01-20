@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moliyaviy boshqaruv</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="mega">
+                <div class="headerFirst">
+                    <img src="images/Logo.png" alt="logo">
+                    <button id="btn">Yangi tranzaksiya</button>
+                </div>
+                <div class="header_main">
+                    <div class="box_header">
+                        <div class="header_item">
+                            <h3>Kirim</h3>
+                            <img src="images/Icons.svg" alt="icon 1">
+                        </div>
+                        <h1>6,636,226 UZS</h1>
+                    </div>
+                    <div class="box_header">
+                        <div class="header_item">
+                            <h3>Chiqim</h3>
+                            <img src="images/Icons (1).svg" alt="icon 2">
+                        </div>
+                        <h1>1,204,220 UZS</h1>
+                    </div>
+                    <div class="box_header inter">
+                        <div class="header_item">
+                            <h3>Qolgan pul</h3>
+                            <img src="images/Icons (2).svg" alt="icon 3">
+                        </div>
+                        <h1>5,432,006 UZS</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="allmain">
+                <div class="mainNht">
+                    <div class="main_header">
+                        <input type="search" id="search" placeholder="Qidirish">
+                        <a href="#"><button><img src="images/Icons (3).svg" alt="icon Search"> Qidirish</button></a>
+                    </div>
+                </div>
+                <div class="expenses">
+                    <ul id="listlar">
+                        <li>
+                            <h4>Iyul oyi uchun oylik</h4>
+                            <h5 class="greens">10,000,000 UZS</h5>
+                            <p>Mohirdev kompaniyasi</p>
+                            <span>01/07/2024</span>
+                        </li>
+                        <li>
+                            <h4>Iyun oyi uchun kommunal to’lovlar</h4>
+                            <h5 class="reds">- 750,000 UZS</h5>
+                            <p>Kommunal to’lov</p>
+                            <span>30/06/2024</span>
+                        </li>
+                        <li>
+                            <h4>Iyun oyi uchun moshina ijarasi</h4>
+                            <h5 class="reds">- 3,000,000 UZS</h5>
+                            <p>Ijara</p>
+                            <span>27/06/2024</span>
+                        </li>
+                        <li>
+                            <h4>Loyihadan kelgan pul</h4>
+                            <h5 class="greens">7,000,000 UZS</h5>
+                            <p>Google loyihasidan</p>
+                            <span>15/06/2024</span>
+                        </li>
+                        <li>
+                            <h4>Do’stim va nihoyat qarzini berdi</h4>
+                            <h5 class="greens">2,000,000 UZS</h5>
+                            <p>Qarz</p>
+                            <span>13/06/2024</span>
+                        </li>
+                        <li>
+                            <h4>Iyun oyi uchun uy ijarasi</h4>
+                            <h5 class="reds">- 3,000,000 UZS</h5>
+                            <p>Ijara</p>
+                            <span>10/06/2024</span>
+                        </li>
+                        <li>
+                            <h4>Kiyim oldim</h4>
+                            <h5 class="reds">- 1,000,000 UZS</h5>
+                            <p>Shopping</p>
+                            <span>02/06/2024</span>
+                        </li>
+                        <li>
+                            <h4>Iyun oyi uchun oylik</h4>
+                            <h5 class="greens">8,000,000 UZS</h5>
+                            <p>Mohirdev kompaniyasi</p>
+                            <span>01/06/2024</span>
+                        </li>
+
+                        <li>
+                            <h4>May oyi uchun moshina ijarasi</h4>
+                            <h5 class="reds">- 2,700,000 UZS</h5>
+                            <p>Ijara</p>
+                            <span>27/05/2024</span>
+                        </li>
+                        <li>
+                            <h4>Oilaviy ovqatlanish</h4>
+                            <h5 class="reds">- 750,000 UZS</h5>
+                            <p>Oziq-ovqat</p>
+                            <span>25/05/2024</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pp4">
+                    <div class="geh">
+                        <img src="images/Icons (4).svg" alt="oldinga">
+                        <button class="ckm">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <img src="images/Icons (5).svg" alt="keyingi">
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <div class="modal alsl">
+        <div class="hammasi">
+            <h1>Salom Do'stim</h1>
+            <p>Bu oy qanaqa savdolar qildingiz qancha harajat yoki pul topdingiz </p>
+            <form id="form">
+                <label for="yanvar">Qaysi oy uchun daromadingiz : </label>
+                <input type="text" id="yanvar" placeholder="Masalan:Yanvar oyi">
+
+                <label for="som">Necha so'm $ :</label>
+                <input type="number" id="som" placeholder="Masalan:10 000 000" >
+
+                <label for="ff">Nimaga sarflangan :</label>
+                <input type="text" id="ff" placeholder="Masalan: Mohir.dev">
+
+                <label for="iosd">Vaqt :</label>
+                <input type="datetime" id="iosd" placeholder="Masalan 01/01/2025">
+                <label for="type">Turini tanlang</label><br>
+                <select id="type" class="tanlash">
+                    <option value="greens">Foyda :</option>
+                    <option value="reds">Harajat</option>
+                </select> <br> <br>
+                <button type="submit" id="btn02">Yuborish</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const button = document.querySelector('#btn');
+        const btn = document.querySelector('.hammasi');
+        const harajatlar = document.querySelector('#listlar');
+        const btn02 = document.querySelector('#btn02');
+        const inputs = document.querySelector('#yanvar');
+        const som = document.querySelector('#som');
+        const ff = document.querySelector('#ff');
+        const iosd = document.querySelector('#iosd');
+
+        function inputss() {
+            const title = inputs.value; // Sarlavha
+            const amount = som.value; // Miqdor
+            const reason = ff.value; // Nimaga sarflangan
+            const date = iosd.value; // Vaqt
+            const type = document.querySelector('#type').value; // Tanlangan tur
+
+            return {
+                content: `
+            <h4>${title}</h4>
+            <h5 class="${type}">${amount}</h5>
+            <p>${reason}</p>
+            <span>${date}</span>
+        `,
+                type, // Class uchun qaytaramiz
+            };
+        }
+
+        btn02.addEventListener('click', (event) => {
+            event.preventDefault(); // Sahifani yangilanmasligi uchun
+
+            const li = document.createElement('li');
+            const {
+                content,
+                type
+            } = inputss(); // Mazmun va turni olamiz
+
+            li.innerHTML = content; // Ichki HTML-ni to'ldiramiz
+            li.querySelector('h5').classList.add(type); // Tanlangan turga mos class qo'shamiz
+            harajatlar.prepend(li); // Ro'yxatga qo'shamiz
+            btn.classList.remove('active');
+            // inputs.value.remove()
+        });
+        button.addEventListener('click', () => {
+            btn.classList.add('active');
+        })
+
+        const searchInput = document.querySelector('#search'); // Qidiruv maydoni
+
+searchInput.addEventListener('input', () => {
+    const searchText = searchInput.value.toLowerCase(); 
+    const listItems = Array.from(document.querySelectorAll('#listlar li')); 
+    const matchingItems = listItems.filter(item =>
+        item.textContent.toLowerCase().includes(searchText)
+    );
+    const nonMatchingItems = listItems.filter(item =>
+        !item.textContent.toLowerCase().includes(searchText)
+    );
+    harajatlar.innerHTML = ''; 
+    matchingItems.forEach(item => harajatlar.appendChild(item));
+    nonMatchingItems.forEach(item => harajatlar.appendChild(item));
+});
+
+
+
+
+       
+    </script>
+</body>
+
+</html>

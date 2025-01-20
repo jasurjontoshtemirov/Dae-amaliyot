@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            list-style-type: none;
+        }
+
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 116, 1) 0%, rgba(9, 85, 121, 1) 0%, rgba(0, 212, 255, 1) 86%);
+        }
+
+        .container {
+            border: 3px solid red;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        .box {
+            border: 3px solid green;
+            width: 700px;
+            background-color: #fff;
+            min-height: 60vh;
+        }
+
+        form {
+            border: 3px solid none;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        form input {
+            padding: 10px;
+            width: 500px;
+            height: 40px;
+            outline: none;
+            color: #0051ff;
+            font-weight: 550;
+            border: 2px solid #0051ff;
+            border-radius: 5px;
+            /* box-shadow: inset 0 4px 4px rgba(1, 57, 59, 0.1); */
+        }
+
+        .label1 {
+            position: absolute;
+            margin: 10px;
+            margin-left: -500px;
+            background-color: #fff;
+            padding: 0px 5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        #create:focus+.label1 {
+            transform: translateY(-20px);
+            color: #0051ff;
+        }
+
+        .container h1 {
+            text-align: center;
+            line-height: 80px;
+            background-color: grey;
+        }
+
+        .button1 {
+            margin-left: 6px;
+            cursor: pointer;
+            background-color: #0051ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 11px 31px;
+        }
+
+        .listlar {
+            height: inherit;
+            overflow: hidden;
+            /* border: 2px solid blue; */
+        }
+
+        li {
+            max-height: 60vh;
+            margin: 15px;
+        }
+
+        /* Listlar */
+        li {
+            margin-top: 5px;
+            padding: 15px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px;
+            background-color: rgb(227, 217, 217);
+        }
+
+        li:hover {
+            box-shadow: 0px 0px 10px red;
+        }
+
+        li:hover .edit {
+            display: block;
+        }
+
+        .edit {
+            display: none;
+        }
+
+        .edit i {
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>ToDo List</h1>
+            <form>
+                <input type="search" id="create">
+                <label for="create" class="label1">Vazifa qo'shing</label>
+                <button class="button1">Yaratmoq</button>
+            </form>
+            <div class="listlar">
+                <li class="list">
+                    <div class="inputval">
+                        <input type="checkbox" id="text" class="abs">
+                        <label for="text">hello</label>
+                    </div>
+                    <div class="edit">
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash add"></i>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        // document.addEventListener('contextmenu', (e) => {
+        //         e.preventDefault()
+        //     });
+
+        const box = document.querySelector('.box');
+        const form = document.querySelector('form');
+        const createInput = document.querySelector('#create');
+        const button1 = document.querySelector('.button1');
+        const listlar = document.querySelector('.listlar');
+        const faS = document.querySelector('.add')
+
+
+        function ios() {
+            const random = Math.floor(Math.random() * 100 + 1)
+            const a = random
+            const li = document.createElement('li');
+            listlar.prepend(li)
+            li.innerHTML = `
+               <div class="inputval">
+                    <input type="checkbox" id="text${a}" class="abs">
+                    <label for="text${a}">${createInput.value}</label>
+               </div>
+                <div class="edit">
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>`;
+            createInput.value = ""
+            const trashIcon = li.querySelector('.fa-trash');
+            trashIcon.addEventListener('click', () => {
+                li.remove(); // Vazifani ro‘yxatdan o‘chiradi
+            });
+
+        }
+        const editIcon = li.querySelector('.fa-pen');
+        editIcon.addEventListener('click', () => {
+            const label = li.querySelector('label');
+            const currentText = label.textContent; // Hozirgi vazifa matni
+            const newText = prompt("Vazifani o'zgartiring:", currentText);
+            if (newText !== null && newText.trim() !== "") {
+                label.textContent = newText; // Matnni yangilash
+            } else if (newText === "") {
+                alert("Vazifa bo'sh bo'lishi mumkin emas!");
+            }
+        });
+        button1.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (createInput.value.trim() !== "") {
+                ios()
+            } else {
+                alert('Todo List yozing')
+            }
+        })
+
+        faS.addEventListener('click', () => {
+
+        })
+    </script>
+</body>
+
+</html>

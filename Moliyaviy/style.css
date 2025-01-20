@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #212124;
+}
+
+.container {
+    height: 500px;
+}
+
+header {
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    background-color: #121214;
+
+}
+
+.mega {
+    width: 1120px;
+}
+
+.headerFirst {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 50px;
+}
+
+.headerFirst button {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: #00875F;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header_main {
+    position: relative;
+    top: 45px;
+    width: 1120px;
+    height: 137px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box_header:hover {
+    transform: translate(0px, 20px);
+    transition: 1s;
+}
+
+.box_header {
+    border-radius: 6px;
+    transform: translate(0px, 0px);
+    transition: 1s;
+    height: inherit;
+    width: 352px;
+    padding: 24px;
+    padding-left: 32px;
+    background-color: #323238;
+
+}
+
+.header_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 25.6px;
+
+}
+
+.header_item h3 {
+    color: #C4C4CC;
+    font-weight: 500;
+}
+
+
+.inter {
+    background-color: #015F43;
+}
+
+
+.box_header h1 {
+    margin-top: 5px;
+    line-height: 47.8px;
+    font-size: 32px;
+    color: #E1E1E6;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.allmain {
+    margin-top: 120px;
+    height: 900px;
+    width: 1120px;
+}
+
+.main_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_header input {
+    border-radius: 6px;
+    padding: 17px;
+    width: 952px;
+    background: #121214;
+    border: none;
+    outline: none;
+    color: red;
+}
+
+.main_header button {
+    border: 1px solid #00B37E;
+    background: local;
+    padding: 14px 32px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    color: #00875F;
+    text-shadow: 0.5px -0.5px 1px black;
+    box-shadow: inset 0 0px 4px rgb(9, 150, 58);
+    align-items: center;
+    cursor: pointer;
+}
+
+.main_header button img {
+    position: relative;
+    right: 10px;
+}
+
+.expenses {
+    margin-top: 25px;
+}
+
+.expenses h4 {
+    width: 500px !important;
+}
+
+.expenses h5 {
+    width: 200px;
+}
+
+.expenses p {
+    width: 240px;
+}
+
+.expenses span {
+    width: 92px;
+}
+
+.expenses li {
+    color: #C4C4CC;
+    background-color: #29292E;
+    padding: 20px 32px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.greens {
+    color: #00B37E;
+}
+
+.reds {
+    color: #F75A68;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    margin: 20px;
+}
+
+
+.modal.active {
+    display: block;
+}
+
+
+.hammasi {
+    padding: 30px;
+    background-color: #C4C4CC;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 500px;
+    height: 700px;
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    /* box-shadow: inset 0 4px 10px rgb(255, 255, 255); */
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+.tanlash {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    background: local;
+    border: 3px solid black;
+}
+
+#btn02 {
+    width: 100%;
+    padding: 20px 80px;
+    border: none;
+    overflow: none;
+    background-color: #00B37E;
+    border-radius: 5px;
+
+}
+
+
+.hammasi h1 {
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.hammasi p {
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+#form {
+    display: block;
+}
+
+#form input {
+    display: block;
+    background: local;
+    width: 100%;
+    font-size: 25px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px; 
+}
+
+#form label {
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.pp4 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.geh {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.geh button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #323238;
+    color: #C4C4CC;
+    font-weight: 700;
+}
+
+.ckm {
+    background-color: #015F43 !important;
+}
